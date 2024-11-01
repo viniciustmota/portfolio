@@ -1,1 +1,9 @@
-[ { "id": 1, "titulo": "Exploração da Tripulação do Chapéu de Palha: Personagens de One Piece", "descricao": "Este projeto é uma experiência interativa dedicada aos fãs de One Piece , onde você pode explorar a história e as habilidades de cinco personagens icônicos da Tripulação do Chapéu de Palha. Com um design cativante e detalhado, cada página oferece uma inserção visual e informativa em personagens como Luffy, Zoro, Nami, Sanji e Usopp. Descubra curiosidades, veja ilustrações personalizadas e aprofunde-se nas características únicas de cada membro da tripulação e visual!", "imagem": "https://private-user-images.githubusercontent.com/106537834/271834445-f23251cf-239b-498c-8d40-4f69b9326971.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzA0ODA5NjgsIm5iZiI6MTczMDQ4MDY2OCwicGF0aCI6Ii8xMDY1Mzc4MzQvMjcxODM0NDQ1LWYyMzI1MWNmLTIzOWItNDk4Yy04ZDQwLTRmNjliOTMyNjk3MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQxMTAxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MTEwMVQxNzA0MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05NmNlNjQ2ZGVmYzIyZTY5NjE0NGM4Y2QxYjE5YzYzZTg2NzM3NjczZjA3NDU2ZDBkMzQyNzA0YTljM2RlNjcxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.pUam3ZbBVcE60JqrsJ6QSX2Vc9YR0bMbgycsxKyMscg", "github":"https://github.com/viniciustmota/one-piece" ,"link": "https://one-piece-two.vercel.app/" } ]
+[
+  {
+    "id": 1,
+    "titulo": "Exploração da Tripulação do Chapéu de Palha: Personagens de One Piece",
+    "descricao": "Este projeto é uma experiência interativa dedicada aos fãs de One Piece , onde você pode explorar a história e as habilidades de cinco personagens icônicos da Tripulação do Chapéu de Palha. Com um design cativante e detalhado, cada página oferece uma inserção visual e informativa em personagens como Luffy, Zoro, Nami, Sanji e Usopp. Descubra curiosidades, veja ilustrações personalizadas e aprofunde-se nas características únicas de cada membro da tripulação e visual!",
+    "imagem": "./img/OnePiece.png",
+    "link": "https://one-piece-two.vercel.app/"
+  }
+]
