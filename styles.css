@@ -1,0 +1,338 @@
+/* Variáveis CSS para facilitar manutenção */
+:root {
+  --primary-color: #f9c74f;
+  --secondary-color: #ffb703;
+  --background-color: #121212;
+  --header-background: #181818;
+  --text-color: #f1f1f1;
+  --footer-color: #888;
+  --nav-hover-color: #e0e0e0;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em;
+  background-color: var(--header-background);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  opacity: 0; /* Começa invisível */
+  animation: fadeIn 1s forwards; /* Animação de desvanecimento */
+}
+
+.logo {
+  font-size: 1.7em;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 1em;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav button:hover {
+  color: var(--nav-hover-color);
+  transform: translateY(-2px);
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f1f1f, #282828);
+  text-align: center;
+  padding: 0 1em;
+}
+
+#hero h1 {
+  font-size: 3.5em;
+  color: var(--primary-color);
+  margin-bottom: 0.5em;
+  animation: slideDown 0.5s ease forwards;
+}
+
+#hero p {
+  font-size: 1.5em;
+  max-width: 600px;
+  margin: 1em 0;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.cta-btn {
+  padding: 0.8em 2em;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.cta-btn:hover {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#about {
+  padding: 2em;
+  background-color: var(--background-color);
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+#about h2 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+/* Estilos de rodapé */
+footer {
+  padding: 1em;
+  background-color: var(--header-background);
+  color: var(--footer-color);
+  text-align: center;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+
+  #hero h1 {
+    font-size: 2.5em;
+  }
+
+  #hero p {
+    font-size: 1.2em;
+  }
+
+  .cta-btn {
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+  }
+
+  #about h2 {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  nav button {
+    font-size: 0.9em;
+  }
+
+  #hero h1 {
+    font-size: 2em;
+  }
+
+  #hero p {
+    font-size: 1em;
+  }
+
+  .cta-btn {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+
+  #about h2 {
+    font-size: 1.5em;
+  }
+}
+
+.disabled {
+  display: none;
+}
+
+.projects-section {
+  background-color: #212121; /* Fundo escuro */
+  color: #ffffff; /* Texto branco */
+  padding: 3em; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+  max-width: 700px; /* Largura máxima */
+  margin: 2em auto; /* Centraliza horizontalmente */
+  font-family: 'Arial', sans-serif; /* Fonte moderna */
+}
+
+.projects-title {
+  text-align: center; /* Centraliza o título */
+  font-size: 2em; /* Tamanho maior para o título */
+  margin-bottom: 1.5em; /* Espaçamento abaixo do título */
+  color: #f9c74f; /* Cor do título */
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 0 16px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.02); /* Escala um pouco para dar um efeito de zoom */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-card-content {
+  padding: 16px;
+  text-align: left;
+}
+
+.project-card h4 {
+  margin: 0 0 8px;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Botão do projeto */
+.projeto-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.projeto-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-text {
+  margin-right: 8px;
+}
+
+.btn-icon {
+  font-size: 18px;
+}
+
+/* Detalhes */
+.detalhes {
+  margin-top: 50px; /* Espaçamento acima da seção de detalhes */
+  opacity: 0; /* Iniciar invisível */
+  transition: opacity 0.5s ease; /* Transição de desvanecimento */
+}
+
+.detalhes.visible {
+  opacity: 1; /* Visível quando a classe é adicionada */
+}
+
+/* Estilo para o botão de GitHub */
+.github-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Texto branco */
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s, border-color 0.3s;
+}
+
+.github-btn:hover {
+  background-color: #555; /* Cor de hover */
+  transform: scale(1.05); /* Leve efeito de aumento */
+  border-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+}
+
+.btn-text {
+  margin-right: 8px; /* Espaço entre o texto e o ícone */
+}
+
+.btn-icon {
+  font-size: 1.2em;
+}

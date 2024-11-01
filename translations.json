@@ -1,0 +1,133 @@
+{
+    "en": {
+      "translation": {
+        "title": "Portfolio Vinícius Mota",
+        "logo": "Vinícius Mota",
+        "portfolio_title": "Portfolio",
+        "portfolio_intro": "Experience in development, design, and SEO.",
+        "learn_more": "Learn More",
+        "about_title": "About Me",
+        "about_description": "I am Vinicius Mota, a developer with experience in design, programming, and SEO.",
+        "projects_title": "My Projects",
+        "footer_text": "© 2024 Vinicius Mota"
+      }
+    },
+    "pt": {
+      "translation": {
+        "title": "Portfólio Vinícius Mota",
+        "logo": "Vinícius Mota",
+        "portfolio_title": "Portfólio",
+        "portfolio_intro": "Experiência em desenvolvimento, design e SEO.",
+        "learn_more": "Saiba Mais",
+        "about_title": "Sobre Mim",
+        "about_description": "Sou Vinicius Mota, desenvolvedor com experiência em design, programação e SEO.",
+        "projects_title": "Meus Projetos",
+        "footer_text": "© 2024 Vinicius Mota"
+      }
+    },
+    "es": {
+      "translation": {
+        "title": "Portafolio Vinícius Mota",
+        "logo": "Vinícius Mota",
+        "portfolio_title": "Portafolio",
+        "portfolio_intro": "Experiencia en desarrollo, diseño y SEO.",
+        "learn_more": "Aprender Más",
+        "about_title": "Sobre Mí",
+        "about_description": "Soy Vinicius Mota, un desarrollador con experiencia en diseño, programación y SEO.",
+        "projects_title": "Mis Proyectos",
+        "footer_text": "© 2024 Vinicius Mota"
+      }
+    },
+    "fr": {
+      "translation": {
+        "title": "Portfolio Vinícius Mota",
+        "logo": "Vinícius Mota",
+        "portfolio_title": "Portfolio",
+        "portfolio_intro": "Expérience en développement, design et SEO.",
+        "learn_more": "En savoir plus",
+        "about_title": "À Propos de Moi",
+        "about_description": "Je suis Vinicius Mota, un développeur avec expérience en design, programmation et SEO.",
+        "projects_title": "Mes Projets",
+        "footer_text": "© 2024 Vinicius Mota"
+      }
+    },
+    "de": {
+      "translation": {
+        "title": "Portfolio Vinícius Mota",
+        "logo": "Vinícius Mota",
+        "portfolio_title": "Portfolio",
+        "portfolio_intro": "Erfahrung in Entwicklung, Design und SEO.",
+        "learn_more": "Mehr erfahren",
+        "about_title": "Über mich",
+        "about_description": "Ich bin Vinicius Mota, ein Entwickler mit Erfahrung in Design, Programmierung und SEO.",
+        "projects_title": "Meine Projekte",
+        "footer_text": "© 2024 Vinicius Mota"
+      }
+    },
+    "it": {
+      "translation": {
+        "title": "Portfolio Vinícius Mota",
+        "logo": "Vinícius Mota",
+        "portfolio_title": "Portfolio",
+        "portfolio_intro": "Esperienza in sviluppo, design e SEO.",
+        "learn_more": "Scopri di più",
+        "about_title": "Chi sono",
+        "about_description": "Sono Vinicius Mota, uno sviluppatore con esperienza in design, programmazione e SEO.",
+        "projects_title": "I miei progetti",
+        "footer_text": "© 2024 Vinicius Mota"
+      }
+    },
+    "ru": {
+      "translation": {
+        "title": "Портфолио Винисиуса Моты",
+        "logo": "Винисиус Мота",
+        "portfolio_title": "Портфолио",
+        "portfolio_intro": "Опыт в разработке, дизайне и SEO.",
+        "learn_more": "Узнать больше",
+        "about_title": "Обо мне",
+        "about_description": "Я Винисиус Мота, разработчик с опытом в дизайне, программировании и SEO.",
+        "projects_title": "Мои проекты",
+        "footer_text": "© 2024 Винисиус Мота"
+      }
+    },
+    "zh": {
+      "translation": {
+        "title": "维尼修斯·莫塔的作品集",
+        "logo": "维尼修斯·莫塔",
+        "portfolio_title": "作品集",
+        "portfolio_intro": "在开发、设计和SEO方面的经验。",
+        "learn_more": "了解更多",
+        "about_title": "关于我",
+        "about_description": "我是维尼修斯·莫塔，拥有设计、编程和SEO经验的开发人员。",
+        "projects_title": "我的项目",
+        "footer_text": "© 2024 维尼修斯·莫塔"
+      }
+    },
+    "ja": {
+      "translation": {
+        "title": "ヴィニシウス・モタのポートフォリオ",
+        "logo": "ヴィニシウス・モタ",
+        "portfolio_title": "ポートフォリオ",
+        "portfolio_intro": "開発、デザイン、SEOの経験。",
+        "learn_more": "もっと詳しく",
+        "about_title": "私について",
+        "about_description": "私はヴィニシウス・モタで、デザイン、プログラミング、SEOに経験があります。",
+        "projects_title": "私のプロジェクト",
+        "footer_text": "© 2024 ヴィニシウス・モタ"
+      }
+    },
+    "ar": {
+      "translation": {
+        "title": "محفظة فينيشيوس موطا",
+        "logo": "فينيشيوس موطا",
+        "portfolio_title": "محفظة",
+        "portfolio_intro": "الخبرة في التطوير والتصميم و SEO.",
+        "learn_more": "اعرف المزيد",
+        "about_title": "عني",
+        "about_description": "أنا فينيشيوس موطا، مطور لديه خبرة في التصميم والبرمجة و SEO.",
+        "projects_title": "مشاريعي",
+        "footer_text": "© 2024 فينيشيوس موطا"
+      }
+    }
+  }
+  
