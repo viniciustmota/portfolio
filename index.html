@@ -1,82 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Vinicius Mota, desenvolvedor com experiência em design, programação e SEO.">
-  <meta name="keywords" content="portfólio, desenvolvedor, designer, SEO, freelancer">
-  <title data-translate="title">Portfólio Vinícius Mota</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    /* Estilo para a seção de detalhes do projeto */
-    .detalhes {
-      margin-top: 50px; /* Espaço acima da seção de detalhes */
-      opacity: 0; /* Iniciar invisível */
-      transition: opacity 0.5s ease; /* Transição de desvanecimento */
-    }
-    .detalhes.visible {
-      opacity: 1; /* Visível quando a classe é adicionada */
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo" data-translate="logo">Vinícius Mota</div>
-    <nav>
-      <select id="idioma-select" onchange="changeLanguage(this.value)">
-        <option value="pt">Português</option>
-        <option value="en">Inglês</option>
-        <option value="es">Español</option>
-        <option value="fr">Français</option>
-        <option value="de">Alemão</option>
-        <option value="it">Italiano</option>
-        <option value="ru">Русский</option>
-        <option value="zh">中文</option>
-        <option value="ja">日本語</option>
-        <option value="ar">العربية</option>
-      </select>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio de Vinicius Mota, desenvolvedor com experiência em design, programação e SEO."
+    />
+    <meta
+      name="keywords"
+      content="portfólio, desenvolvedor, designer, SEO, freelancer"
+    />
+    <title data-translate="title">Portfólio Vinícius Mota</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Estilo para a seção de detalhes do projeto */
+      .detalhes {
+        margin-top: 50px; /* Espaço acima da seção de detalhes */
+        opacity: 0; /* Iniciar invisível */
+        transition: opacity 0.5s ease; /* Transição de desvanecimento */
+      }
+      .detalhes.visible {
+        opacity: 1; /* Visível quando a classe é adicionada */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo" data-translate="logo">Vinícius Mota</div>
+      <nav>
+        <select id="idioma-select" onchange="changeLanguage(this.value)">
+          <option value="pt">Português</option>
+          <option value="en">Inglês</option>
+          <option value="es">Español</option>
+          <option value="fr">Français</option>
+          <option value="de">Alemão</option>
+          <option value="it">Italiano</option>
+          <option value="ru">Русский</option>
+          <option value="zh">中文</option>
+          <option value="ja">日本語</option>
+          <option value="ar">العربية</option>
+        </select>
+      </nav>
+    </header>
 
-  <section id="hero">
-    <h1 data-translate="portfolio_title">Portfólio</h1>
-    <p data-translate="portfolio_intro">Experiência em desenvolvimento, design e SEO.</p>
-    <a href="#projects" class="projeto-btn saiba-mais" data-translate="learn_more">Saiba Mais</a>
-  </section>
+    <section id="hero">
+      <h1 data-translate="portfolio_title">Portfólio</h1>
+      <p data-translate="portfolio_intro">
+        Experiência em desenvolvimento, design e SEO.
+      </p>
+      <a
+        href="#projects"
+        class="projeto-btn saiba-mais"
+        data-translate="learn_more"
+        >Saiba Mais</a
+      >
+    </section>
 
-  <section id="about">
-    <h2 data-translate="about_title">Sobre Mim</h2>
-    <p data-translate="about_description">Sou Vinicius Mota, desenvolvedor com experiência em design, programação e SEO.</p>
-  </section>
+    <section id="about">
+      <h2 data-translate="about_title">Sobre Mim</h2>
+      <p data-translate="about_description">
+        Sou Vinicius Mota, desenvolvedor com experiência em design, programação
+        e SEO.
+      </p>
+    </section>
 
-  <section id="projects" class="projects-section">
-    <h3 class="projects-title" data-translate="projects_title">Meus Projetos</h3>
-    <div id="projects-list" class="projects-container"></div> <!-- Seção para exibir projetos -->
-  </section>
+    <section id="projects" class="projects-section">
+      <h3 class="projects-title" data-translate="projects_title">
+        Meus Projetos
+      </h3>
+      <div id="projects-list" class="projects-container"></div>
+      <!-- Seção para exibir projetos -->
+    </section>
 
-  <footer>
-    <p data-translate="footer_text">© 2024 Vinicius Mota</p>
-  </footer>
+    <footer>
+      <p data-translate="footer_text">© 2024 Vinicius Mota</p>
+    </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/i18next/i18next.js"></script>
-  <script src="mudarIdioma.js"></script>
-  <script src="carregarProjeto.js"></script>
-  <script>
-    document.querySelectorAll('.saiba-mais').forEach(button => {
-      button.addEventListener('click', function(event) {
-        event.preventDefault(); // Evitar o comportamento padrão do link
-        const targetId = this.getAttribute('href'); // Pegar o href do botão
-        const targetSection = document.querySelector(targetId); // Selecionar a seção de destino
-        targetSection.scrollIntoView({
-          behavior: 'smooth', // Rolagem suave
-          block: 'start' // Iniciar na parte superior da seção
+    <!-- Scripts -->
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="mudarIdioma.js"></script>
+    <script src="carregarProjeto.js"></script>
+    <script>
+      document.querySelectorAll(".saiba-mais").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          event.preventDefault(); // Evitar o comportamento padrão do link
+          const targetId = this.getAttribute("href"); // Pegar o href do botão
+          const targetSection = document.querySelector(targetId); // Selecionar a seção de destino
+          targetSection.scrollIntoView({
+            behavior: "smooth", // Rolagem suave
+            block: "start", // Iniciar na parte superior da seção
+          });
+          // Adiciona uma classe "visível" para exibir a seção de detalhes
+          targetSection.classList.add("visible");
         });
-        // Adiciona uma classe "visível" para exibir a seção de detalhes
-        targetSection.classList.add('visible');
       });
-    });
-  </script>
-</body>
+    </script>
+    <script src="/_vercel/insights/script.js" async></script>
+  </body>
 </html>
