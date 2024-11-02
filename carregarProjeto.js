@@ -26,7 +26,7 @@ function renderizarProjetos(projetos) {
         <div class="project-card-content">
           <h4>${projeto.titulo}</h4>
           <p>${projeto.descricao}</p>
-          <a href="https://github.com/seu-usuario" class="github-btn" target="_blank">
+          <a href="${projeto.github}" class="github-btn" target="_blank">
   <span class="btn-text">Visite meu GitHub</span>
   <i class="btn-icon fab fa-github"></i> <!-- Usando Font Awesome para ícone -->
 </a>
